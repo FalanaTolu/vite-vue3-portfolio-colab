@@ -1,0 +1,41 @@
+<template>
+    <div class="h-full flex flex-col">
+      <header>
+        <NavigationBar />
+      </header>
+      <main class="flex-grow p-16 bg-sky-50 dark:bg-black">
+        <slot></slot>
+        <LinkComponent />
+      </main>
+      <footer class="flex-shrink-0">
+        <FooterComponent />
+      </footer>
+    </div>
+  </template>
+
+<script lang="ts">
+import NavigationBar from '../NavigationBar.vue';
+import LinkComponent from '../LinkComponent.vue';
+import FooterComponent from '../FooterComponent.vue';
+import { defineComponent } from 'vue';
+
+export default defineComponent({
+    name: "LayoutComponent",
+    components: { 
+      NavigationBar,
+      LinkComponent, 
+      FooterComponent,
+    }
+})
+</script>
+
+<style scoped>
+/* v-footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+} */
+
+</style>
