@@ -1,6 +1,6 @@
 <template>
     <!-- <div v-show ="!isHomePage" class="container mx-auto w-max bg-gray-200 flex flex-col gap-2 fixed top-1/2 right-0 float-right shadow-md shadow-gray-600/50 border p-3 before:absolute before:w-0.5 before:h-14 before:bg-gray-400 before:bottom-full before:left-2/4 after:absolute after:w-0.5 after:h-14 after:bg-gray-400 after:top-full after:left-2/4"> -->
-    <div v-show ="!isHomePage" class="container mx-auto w-max bg-gray-200 flex flex-col gap-2 fixed top-1/2 right-0 float-right shadow-md shadow-gray-600/50 border p-3">
+    <div v-show ="!isHomePage" class="container mx-auto w-max bg-gray-200 dark:bg-gray-600 flex flex-col gap-2 fixed top-1/2 right-0 float-right shadow-md shadow-gray-600/50 border dark:border-none p-3">
         <a :href="twitter" target="_blank" rel="noopener noreferrer"><v-icon name="fa-twitter" scale="1.5" class="hover:text-blue-500 transition" /></a>
         <a :href="linkedin" target="_blank" rel="noopener noreferrer"><v-icon name="fa-linkedin" scale="1.5" class="hover:text-blue-900 transition" /></a>
         <a :href="github" target="_blank" rel="noopener noreferrer"><v-icon name="fa-github" scale="1.5" class="hover:text-gray-100 rounded-full hover:bg-gray-900 transition" /></a>

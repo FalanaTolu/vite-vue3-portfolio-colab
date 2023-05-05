@@ -2,9 +2,9 @@
   <div class="container h-full mx-auto p-8 m-10">
     <div class="md:h-3/4 container flex flex-col items-center gap-10 md:gap- flex-wrap">
       <div class="md:w-1/2 flex-[0_1_10%]">
-        <p class="text-5xl text-gray-700 font-bold mb-5">Hi, I am Falana Tolu</p>
+        <p class="text-5xl text-gray-700 dark:text-gray-300 font-bold mb-5">Hi, I am Falana Tolu</p>
       </div>
-      <div class="md:w-1/2 text-gray-500 text-sm lg:text-base font-light flex-[0_1_10%] order-2 md:order-none">
+      <div class="md:w-1/2 text-gray-500 dark:text-gray-300 text-sm lg:text-base font-light flex-[0_1_10%] order-2 md:order-none">
         <p>
           I am Tolu, a full-stack web developer based in Lagos, Nigeria. I am passionate about creating dynamic and
           responsive web applications that provide a great user experience. With 3 years of experience, I have honed my
@@ -24,8 +24,8 @@
         </p>
       </div>
       <div class="mx-auto">
-        <img src="../assets/me.png" class="h-30 md:h-80 w-30 md:w-80 object-contain rounded-full border border-gray-400" alt="home logo">
-        <div class="flex justify-evenly items-center py-10 text-gray-500">
+        <img src="../assets/me.png" class="h-30 md:h-80 w-30 md:w-80 object-contain rounded-full border border-gray-400 dark:border-gray-700" alt="home logo">
+        <div class="flex justify-evenly items-center py-10 text-gray-500 dark:text-gray-300">
           <a :href="twitter" target="_blank" rel="noopener noreferrer"><v-icon name="fa-twitter" scale="1.5"
               class="hover:text-blue-500 transition" /></a>
           <a :href="linkedin" target="_blank" rel="noopener noreferrer"><v-icon name="fa-linkedin" scale="1.5"

@@ -3,7 +3,7 @@
     <div class="mx-auto" v-if="isLoading">
       <v-icon name="la-spinner-solid" animation="spin-pulse" scale="2.5" />
     </div>
-    <div @click="getJokes" title="Click to change jokes" class="container text-2xl text-gray-500 text-center italic mb-5" v-else>
+    <div @click="getJokes" title="Click to change jokes" class="container text-2xl text-gray-500 dark:text-gray-300 text-center italic mb-5" v-else>
       <transition name="fade" mode="out-in">
         <div :key="joke">
           {{ joke }}
@@ -12,7 +12,7 @@
     </div>
     <div class="flex justify-center items-center mt-4">
       <img src="../assets/jacqueline-munguia-unsplash.jpg" alt="happy" class="h-80 min-w-1/2 w-80 object-contain"/>
-      <p class="w-1/2 text-xl">I think that everyone deserves a chance at finding true happiness at life. So I've included some unfunny jokes here. I hope that you really love them.</p>
+      <p class="w-1/2 text-xl dark:text-gray-300">I think that everyone deserves a chance at finding true happiness at life. So I've included some unfunny jokes here. I hope that you really love them.</p>
     </div>
     <!-- <div>
       <button

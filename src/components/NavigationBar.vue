@@ -1,9 +1,9 @@
 <template>
   <!-- <div class="flex justify-between items-center h-16 w-full transition" :class="{'-translate-y-full':!showNavigationBar}"> -->
-    <div class="flex justify-evenly items-center h-16 w-full bg-white bg-opacity-50 shadow-none md:shadow-md fixed ease-out duration-500 z-10" :class="{'md:-translate-y-20':!showNavigationBar}">
-    <nav class="flex justify-between md:justify-center items-center h-16 w-full text-md text-gray-500 md:text-lg md:mx-auto m-4 md:m-0 p-2 md:p-0 bg-transparent">
+    <div class="flex justify-evenly items-center h-16 w-full bg-white dark:bg-gray-900 bg-opacity-50 shadow-none md:shadow-md fixed ease-out duration-500 z-10" :class="{'md:-translate-y-20':!showNavigationBar}">
+    <nav class="flex justify-between md:justify-center items-center h-16 w-full text-md text-gray-500 dark:text-white md:text-lg md:mx-auto m-4 md:m-0 p-2 md:p-0 bg-transparent">
       <!-- <nav class="flex w-2xl lg:w-1/3 p-2 text-md md:text-lg text-blue-500 mx-auto m-4 rounded-3xl bg-white bg-opacity-50 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur whitespace-nowrap z-10"> -->
-        <router-link to="/"><img src="/me-icon.png" class="h-10 w-10 ml-4 rounded-full border border-gray-400"
+        <router-link to="/"><img src="/me-icon.png" class="h-10 w-10 ml-4 rounded-full border border-gray-400 dark:border-gray-700"
         alt="home logo"></router-link>
         <div class="md:h-full w-full md:w-3/4 flex justify-evenly md:justify-center md:items-center flex-col md:flex-row gap-4 md:gap-16 fixed md:static top-16 left-0 md:m-0 text-center bg-white md:bg-transparent whitespace-nowrap" :class="{'max-[540px]:-translate-x-full': !isActive}">
         <router-link to="/about" class="border-b-2 md:border-none py-4 md:py-0">About</router-link>
