@@ -29,5 +29,6 @@ export default defineComponent({
 
 #app {
   font-family: 'Switzer', sans-serif;
+  font-style: normal;
 }
 </style>

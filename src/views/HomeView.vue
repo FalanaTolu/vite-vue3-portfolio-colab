@@ -15,8 +15,6 @@ import VueWriter from 'vue-writer'
 
 
 export default defineComponent({
-  name: 'HomeView',
-
   components: {
     VueWriter,
   },
