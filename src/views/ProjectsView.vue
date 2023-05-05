@@ -1,10 +1,10 @@
 <template>
-  <div class="container mx-auto bg-gray-200 rounded-xl shadow border p-8 m-10">
-    <p class="text-3xl text-gray-700 font-bold mb-5">
-      Welcome!
+  <div class="container mx-auto text-center p-8 m-10">
+    <p class="text-3xl text-gray-500 font-bold mb-5">
+      Here are some of the personal projects I have worked on
     </p>
-    <p class="text-gray-500 text-lg">
-      This is the projects page
-    </p>
+    <div class="container flex">
+
+    </div>
  </div>
 </template>

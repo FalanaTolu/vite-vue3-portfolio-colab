@@ -1,7 +1,7 @@
 <template>
   <!-- <div class="flex justify-between items-center h-16 w-full transition" :class="{'-translate-y-full':!showNavigationBar}"> -->
-    <div class="flex justify-evenly items-center h-16 w-full bg-white bg-opacity-50 shadow-none md:shadow-md md:ring md:ring-gray-500 fixed ease-out duration-500 z-10" :class="{'md:-translate-y-20':!showNavigationBar}">
-    <nav class="flex justify-between md:justify-evenly items-center h-16 w-full text-md text-gray-500 md:text-lg md:mx-auto m-4 md:m-0 p-2 md:p-0 bg-transparent">
+    <div class="flex justify-evenly items-center h-16 w-full bg-white bg-opacity-50 shadow-none md:shadow-md fixed ease-out duration-500 z-10" :class="{'md:-translate-y-20':!showNavigationBar}">
+    <nav class="flex justify-between md:justify-center items-center h-16 w-full text-md text-gray-500 md:text-lg md:mx-auto m-4 md:m-0 p-2 md:p-0 bg-transparent">
       <!-- <nav class="flex w-2xl lg:w-1/3 p-2 text-md md:text-lg text-blue-500 mx-auto m-4 rounded-3xl bg-white bg-opacity-50 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur whitespace-nowrap z-10"> -->
         <router-link to="/"><img src="/me-icon.png" class="h-10 w-10 ml-4 rounded-full border border-gray-400"
         alt="home logo"></router-link>

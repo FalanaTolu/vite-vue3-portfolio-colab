@@ -1,14 +1,14 @@
 <template>
-  <Layout>
+  <!-- <Layout>
     <router-view v-slot="{ Component }">
-      <transition enter-from-class="-translate-x-[150%] opacity-0" enter-active-class="transition duration-1000">
+      <transition enter-from-class="-translate-x-[150%] opacity-0" enter-active-class="transition duration-2000">
         <component :is="Component" />
       </transition>
     </router-view>
-  </Layout>
-  <!-- <Layout>
-    <router-view/>
   </Layout> -->
+  <Layout>
+    <router-view/>
+  </Layout>
 </template>
 
 <script lang="ts">
@@ -25,6 +25,7 @@ export default defineComponent({
 
 <style>
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap');
+
 
 #app {
   font-family: 'Switzer', sans-serif;

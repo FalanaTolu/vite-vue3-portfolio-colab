@@ -1,5 +1,5 @@
 <template>
-    <div class="flex-shrink-0">
+    <div class="flex-shrink-0 bg-[#5a60ea] text-center text-[#fffffe] p-2">
         <p>&copy; {{ currentYear }} Falana Tolulope</p>
     </div>
 </template>
@@ -15,11 +15,3 @@ export default defineComponent({
     },
 })
 </script>
-  
-<style>
-footer {
-    background-color: #f9f9f9;
-    padding: 10px;
-    text-align: center;
-}
-</style>

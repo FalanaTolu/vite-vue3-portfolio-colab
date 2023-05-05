@@ -1,15 +1,21 @@
 <template>
-  <div class="container mx-auto bg-gray-200 rounded-xl shadow border p-8 m-10">
-    <p class="text-3xl text-gray-700 font-bold mb-5">
-      Welcome!
-    </p>
-    <p class="text-gray-500 text-lg">
-      This is the fun page
-    </p>
-  </div>
-  <div class="container">
-    <div class="joke">
-      <p>{{ data.joke }}</p>
+  <div class="container flex flex-col justify-center mx-auto p-8 m-10 text-gray-500">
+    <div class="mx-auto" v-if="isLoading">
+      <v-icon name="la-spinner-solid" animation="spin-pulse" scale="2.5" />
+    </div>
+    <div @click="getJokes" class="container text-2xl text-gray-500 text-center italic mb-5" v-else>
+      <transition name="fade" mode="out-in">
+        <div :key="joke">
+          {{ joke }}
+        </div>
+      </transition>
+    </div>
+    <div>
+      <!-- <button
+        class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded shadow-lg shadow-gray-600/50 duration-500 hover:-translate-y-1"
+        @click="getJokes">
+        Get Another Joke
+      </button> -->
     </div>
   </div>
 </template>
@@ -17,17 +23,18 @@
 <script lang="ts">
 import { defineComponent } from 'vue';
 
-export interface jokeState {
-  id: string,
-  joke: string,
-  status: number,
-}
+// export interface jokeState {
+//   id: string,
+//   joke: string,
+//   status: number,
+// }
 
 export default defineComponent({
   name: 'DadJokesMore',
   data() {
     return {
-      data: {} as jokeState,
+      joke: "",
+      // data: {} as jokeState,
       isLoading: true,
       apiEndpoint: 'https://icanhazdadjoke.com/',
       requestOptions: {
@@ -38,32 +45,40 @@ export default defineComponent({
   },
   mounted() {
     this.getJokes()
-    setInterval(this.getJokes, 2000);
+    setInterval(() => { this.getJokes() }, 10000)
+    // setInterval(this.getJokes, 10000);
   },
   methods: {
     async getJokes() {
-      fetch(this.apiEndpoint, this.requestOptions)
-        .then((res) => res.json())
-        .then((data) => (this.data = data))
-        .catch((error) => console.log(error))
-        .finally(() => (this.isLoading = false));
-    }
+      // fetch(this.apiEndpoint, this.requestOptions)
+      //   .then((res) => res.json())
+      //   .then((data) => (this.data = data))
+      //   .catch((error) => console.log(error))
+      //   .finally(() => (this.isLoading = false));
+
+      try {
+        // this.isLoading = true
+        const response = await fetch(this.apiEndpoint, this.requestOptions)
+        const json = await response.json()
+        this.joke = json.joke
+      } catch (error) {
+        console.log(error);
+      } finally {
+        this.isLoading = false;
+      }
+    },
   },
 })
 </script>
 
-const url = 'https://dad-jokes.p.rapidapi.com/random/joke';
-const options = {
-	method: 'GET',
-	headers: {
-		'X-RapidAPI-Key': 'SIGN-UP-FOR-KEY',
-		'X-RapidAPI-Host': 'dad-jokes.p.rapidapi.com'
-	}
-};
+<style>
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s ease;
+}
 
-try {
-	const response = await fetch(url, options);
-	const result = await response.text();
-	console.log(result);
-} catch (error) {
-	console.error(error);
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+</style>
