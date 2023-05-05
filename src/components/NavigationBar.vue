@@ -8,7 +8,7 @@
         <div class="md:h-full w-full md:w-3/4 flex justify-evenly md:justify-center md:items-center flex-col md:flex-row gap-4 md:gap-16 fixed md:static top-16 left-0 md:m-0 text-center bg-white md:bg-transparent whitespace-nowrap" :class="{'max-[540px]:-translate-x-full': !isActive}">
         <router-link to="/about" class="border-b-2 md:border-none py-4 md:py-0">About</router-link>
         <router-link to="/projects" class="border-b-2 md:border-none py-4 md:py-0">Projects</router-link>
-        <router-link to="/fun" class="border-b-2 md:border-none py-4 md:py-0">Fun Page</router-link>
+        <router-link to="/fun" class="border-b-2 md:border-none py-4 md:py-0">Random Page</router-link>
         <button @click="toggleDark()" class="md:mr-10 md:absolute md:mr-16 md:right-20 w-3/5 md:w-0 self-center p-2 m-2 bg-pink-500 md:bg-transparent rounded-full">
             <p class="md:hidden inline">Theme</p>
             <v-icon v-if="isDark" name="co-sun" />
