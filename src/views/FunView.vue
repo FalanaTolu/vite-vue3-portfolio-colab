@@ -3,16 +3,16 @@
     <div class="mx-auto" v-if="isLoading">
       <v-icon name="la-spinner-solid" animation="spin-pulse" scale="2.5" />
     </div>
-    <div @click="getJokes" title="Click to change jokes" class="container text-2xl text-gray-500 dark:text-gray-300 text-center italic mb-5" v-else>
+    <div @click="getJokes" title="Click to change jokes" class="container text-lg md:text-2xl text-gray-500 dark:text-gray-300 text-center italic mb-10" v-else>
       <transition name="fade" mode="out-in">
         <div :key="joke">
           {{ joke }}
         </div>
       </transition>
     </div>
-    <div class="flex justify-center items-center mt-4">
-      <img src="../assets/jacqueline-munguia-unsplash.jpg" alt="happy" class="h-80 min-w-1/2 w-80 object-contain"/>
-      <p class="w-1/2 text-xl dark:text-gray-300">I think that everyone deserves a chance at finding true happiness at life. So I've included some unfunny jokes here. I hope that you really love them.</p>
+    <div class="flex flex-col md:flex-row justify-center items-center mt-10 gap-2">
+      <img src="../assets/jacqueline-munguia-unsplash.jpg" alt="happy" class="h-80 w-80 object-contain flex-1"/>
+      <p class="text-base md:text-xl dark:text-gray-300 p-4 md:-ml-10 flex-1">I think that everyone deserves a chance at finding true happiness at life. So I've included some unfunny jokes here. I hope that you really love them.</p>
     </div>
     <!-- <div>
       <button
