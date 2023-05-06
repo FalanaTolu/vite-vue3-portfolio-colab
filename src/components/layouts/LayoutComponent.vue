@@ -3,7 +3,7 @@
       <header>
         <NavigationBar />
       </header>
-      <main class="flex-grow p-16 text-gray-400 bg-sky-50 dark:bg-black dark:text-white">
+      <main class="flex-grow p-16 text-gray-400 bg-[#e8f0fa] dark:bg-black dark:text-white">
         <slot></slot>
         <LinkComponent />
       </main>

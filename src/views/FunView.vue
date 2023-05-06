@@ -3,7 +3,7 @@
     <div class="mx-auto" v-if="isLoading">
       <v-icon name="la-spinner-solid" animation="spin-pulse" scale="2.5" />
     </div>
-    <div @click="getJokes" title="Click to change jokes" class="container text-lg md:text-2xl text-gray-500 dark:text-gray-300 text-center italic mb-10" v-else>
+    <div @click="getJokes" title="Click to change jokes" class="container text-center italic font-bold text-transparent  text-lg md:text-2xl bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 mb-10" v-else>
       <transition name="fade" mode="out-in">
         <div :key="joke">
           {{ joke }}
