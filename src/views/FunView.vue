@@ -12,7 +12,7 @@
     </div>
     <div class="flex flex-col md:flex-row justify-center items-center mt-10 gap-2">
       <img src="../assets/jacqueline-munguia-unsplash.jpg" alt="happy" class="h-80 w-80 object-contain flex-1"/>
-      <p class="text-base md:text-xl dark:text-gray-300 p-4 md:-ml-10 flex-1">I think that everyone deserves a chance at finding true happiness at life. So I've included some unfunny jokes here. I hope that you really love them.</p>
+      <p class="text-base md:text-xl dark:text-gray-300 p-4 md:-ml-10 flex-1">I think that everyone deserves a chance at finding true happiness at life. So I've included some unfunny jokes here. I hope that you really love them. 😜</p>
     </div>
     <!-- <div>
       <button
