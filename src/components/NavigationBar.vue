@@ -3,13 +3,13 @@
     <div class="flex justify-evenly items-center h-16 w-full bg-white dark:bg-gray-900 bg-opacity-50 shadow dark:shadow-white fixed ease-out duration-500 z-10" :class="{'md:-translate-y-20':!showNavigationBar}">
     <nav class="flex justify-between md:justify-center items-center h-16 w-full text-md text-gray-500 dark:text-white md:text-lg md:mx-auto m-4 md:m-0 p-2 md:p-0 bg-transparent">
       <!-- <nav class="flex w-2xl lg:w-1/3 p-2 text-md md:text-lg text-blue-500 mx-auto m-4 rounded-3xl bg-white bg-opacity-50 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur whitespace-nowrap z-10"> -->
-        <router-link to="/"><img src="/me-icon.png" class="h-10 w-10 ml-4 rounded-full border border-gray-400 dark:border-gray-700"
+        <router-link to="/"><img src="/me-icon.png" class="h-10 w-10 ml-4 hover:scale-125 duration-500 rounded-full border border-gray-400 dark:border-gray-700"
         alt="home logo"></router-link>
         <div class="md:h-full w-full md:w-3/4 flex justify-evenly md:justify-center md:items-center flex-col md:flex-row gap-4 md:gap-16 fixed md:static top-16 left-0 md:m-0 text-center bg-white md:bg-transparent dark:bg-gray-900 dark:text-white whitespace-nowrap" :class="{'max-[540px]:-translate-x-full': !isActive}">
-        <router-link to="/about" class="border-b-2 dark:border-white md:border-none py-4 md:py-0">About</router-link>
-        <router-link to="/projects" class="border-b-2 dark:border-white md:border-none py-4 md:py-0">Projects</router-link>
-        <router-link to="/fun" class="border-b-2 dark:border-white md:border-none py-4 md:py-0">Random Page</router-link>
-        <button @click="toggleDark()" class="md:mr-10 md:absolute md:mr-16 md:right-20 w-3/5 md:w-0 self-center p-2 m-2 bg-pink-500 md:bg-transparent rounded-full">
+        <router-link to="/about" class="hover:text-[#5a60ea] duration-500 border-b-2 dark:border-white md:border-none py-4 md:py-0">About</router-link>
+        <router-link to="/projects" class="hover:text-[#5a60ea] duration-500 border-b-2 dark:border-white md:border-none py-4 md:py-0">Projects</router-link>
+        <router-link to="/fun" class="hover:text-[#5a60ea] duration-500 border-b-2 dark:border-white md:border-none py-4 md:py-0">Random Page</router-link>
+        <button @click="toggleDark()" class="md:mr-10 md:absolute md:mr-16 md:right-20 w-3/5 md:w-0 self-center p-2 m-2 bg-[#ff6dcd] md:bg-transparent hover:text-[#5a60ea] hover:scale-125 duration-500 rounded-full">
             <p class="md:hidden inline">Theme</p>
             <v-icon v-if="isDark" name="co-sun" />
             <v-icon v-else name="bi-moon-stars-fill" />
@@ -17,7 +17,7 @@
       </div>
     </nav>
      <!-- Hamburger -->
-     <div class="md:hidden h-14 w-14 flex justify-center rounded-full bg-blue-500 dark:text-white p-4 mr-8">
+     <div class="md:hidden h-14 w-14 flex justify-center rounded-full bg-[#5a60ea] dark:text-white p-4 mr-8">
         <div class="self-start tham tham-e-squeeze tham-w-8 m-auto" :class="{'tham-active': isActive}" @click="toggleActive()" title="Menu">
         <div class="tham-box">
           <div class="tham-inner bg-white" />
