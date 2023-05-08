@@ -31,7 +31,7 @@
           <a :href="linkedin" target="_blank" rel="noopener noreferrer"><v-icon name="fa-linkedin" scale="1.5"
               class="hover:text-blue-900 transition" /></a>
           <a :href="github" target="_blank" rel="noopener noreferrer"><v-icon name="fa-github" scale="1.5"
-              class="hover:text-gray-100 rounded-full hover:bg-gray-900 transition" /></a>
+              class="hover:text-gray-100 dark:hover:text-gray-700 rounded-full hover:bg-gray-900 dark:hover:bg-gray-100 transition" /></a>
           <a :href="'mailto:' + email" target="_blank" rel="noopener noreferrer"><v-icon name="si-gmail" scale="1.5"
               class="hover:text-red-500 transition" /></a>
         </div>
